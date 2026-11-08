@@ -1,0 +1,2 @@
+# The CLI and the tests use only the Python standard library.
+# For an editable installation, run: python -m pip install -e .

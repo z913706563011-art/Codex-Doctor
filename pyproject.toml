@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codex-doctor"
+version = "1.0.0"
+description = "Read-only diagnostics and verified backups for local Codex data on Windows"
+readme = "README.md"
+requires-python = ">=3.12"
+license = {file = "LICENSE"}
+dependencies = []
+classifiers = [
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+]
+
+[project.scripts]
+codex-doctor = "codex_doctor.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["codex_doctor*"]
